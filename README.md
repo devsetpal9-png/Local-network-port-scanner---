@@ -25,13 +25,13 @@ This scan was conducted on a private network for educational purposes only. Unau
 
 | IP Address      | Open Ports       | OS Guess                     | Risk Level | Notes |
 |-----------------|------------------|------------------------------|------------|-------|
-| 192.168.231.103 | 135/tcp, 445/tcp | Windows Server 2012 / XP / 7 | High       | SMB (445) is vulnerable to exploits like EternalBlue. RPC (135) may allow remote code execution. |
-| 192.168.231.133 | 53/tcp           | Linux 2.6.x                  | Medium     | VMware remote management port. Should be restricted and patched. |
-| 192.168.231.254 | Host unreachable | —                            | Unknown    | May be blocking ICMP probes. Consider scanning with `-Pn`. |
+| 192.168.xxx.xxx | 135/tcp, 445/tcp | Windows Server 2012 / XP / 7 | High       | SMB (445) is vulnerable to exploits like EternalBlue. RPC (135) may allow remote code execution. |
+| 192.168.xxx.xxx | 53/tcp           | Linux 2.6.x                  | Medium     | VMware remote management port. Should be restricted and patched. |
+| 192.168.xxx.xxx | Host unreachable | —                            | Unknown    | May be blocking ICMP probes. Consider scanning with `-Pn`. |
 
 ## 🗒️ Notes
 - The scan revealed open ports on multiple hosts within the local network.
-- Host `192.168.231.254` appeared down or may be blocking ICMP probes; consider using `-Pn` to bypass ping checks.
+- Host `192.168.xxx.xxx` appeared down or may be blocking ICMP probes; consider using `-Pn` to bypass ping checks.
 - The Windows host exposes **SMB (port 445)**, which is commonly targeted by exploits such as **EternalBlue**. This service should be restricted or patched if not required.
 - The Linux host running VMware (`port 53`) may be used for remote management; ensure access is limited and the service is up to date.
 - OS detection was performed using the `-O` flag, revealing potential operating systems and network distances.
@@ -41,9 +41,9 @@ This scan was conducted on a private network for educational purposes only. Unau
 
 Below are screenshots of Nmap scans performed during this task:
 
-- `scan-1.png`: It shows a verbose TCP SYN scan with OS detection on 192.168.231.103, skipping ping checks to scan even if the host blocks ICMP.
+- `scan-1.png`: It shows a verbose TCP SYN scan with OS detection on 192.168.xxx.xxx, skipping ping checks to scan even if the host blocks ICMP.
 - `scan-2.png`: It shows OS detection on 192.168.231.254, but if the host blocks ping probes, it may appear down and return no results.
-- `scan-3.png`: It shows a TCP SYN scan with service version detection and OS fingerprinting on 192.168.231.133, revealing open ports, running services, and likely operating system.
+- `scan-3.png`: It shows a TCP SYN scan with service version detection and OS fingerprinting on 192.168.xxx.xxx, revealing open ports, running services, and likely operating system.
 
 These visuals support the findings documented in the risk matrix and demonstrate hands-on use of Nmap for network reconnaissance.
 
