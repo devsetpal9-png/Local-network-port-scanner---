@@ -41,11 +41,12 @@ This scan was conducted on a private network for educational purposes only. Unau
 
 Below are screenshots of Nmap scans performed during this task:
 
-- `scan-1.png`: Shows open ports 135 and 445 on a Windows host, with OS fingerprinting results.
-- `scan-2.png`: Reveals port 902 open on a Linux host running VMware services.
-- `scan-3.png`: Host appears down; suggests using `-Pn` to bypass ping checks.
+- `scan-1.png`: It shows a verbose TCP SYN scan with OS detection on 192.168.231.103, skipping ping checks to scan even if the host blocks ICMP.
+- `scan-2.png`: It shows OS detection on 192.168.231.254, but if the host blocks ping probes, it may appear down and return no results.
+- `scan-3.png`: It shows a TCP SYN scan with service version detection and OS fingerprinting on 192.168.231.133, revealing open ports, running services, and likely operating system.
 
 These visuals support the findings documented in the risk matrix and demonstrate hands-on use of Nmap for network reconnaissance.
+
 ## 🧪 Wireshark Analysis
 
 The image `wireshark-analysis.png` captures key packets during the Nmap scan. It includes:
