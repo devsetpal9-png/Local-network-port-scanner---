@@ -37,6 +37,15 @@ This scan was conducted on a private network for educational purposes only. Unau
 - OS detection was performed using the `-O` flag, revealing potential operating systems and network distances.
 - All scans were conducted ethically within a controlled lab environment for educational purposes.
 
+## 🧪 Wireshark Analysis
+
+The image `wireshark-analysis.png` captures key packets during the Nmap scan. It includes:
+
+- A TCP SYN packet initiating a handshake with a target host (Packet No. 599).
+- DNS query and response traffic (Packets 519–520), showing how services resolve hostnames.
+- TCP options such as MSS, SACK, and timestamps, which help fingerprint the target OS.
+
+This analysis confirms the behavior of Nmap’s SYN scan and provides deeper insight into how devices respond at the packet level.
 ## 🤖 Automation
 Included a Python script to automate Nmap scans and parse results.
 
