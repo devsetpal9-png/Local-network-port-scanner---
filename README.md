@@ -33,7 +33,7 @@ This scan was conducted on a private network for educational purposes only. Unau
 - The scan revealed open ports on multiple hosts within the local network.
 - Host `192.168.231.254` appeared down or may be blocking ICMP probes; consider using `-Pn` to bypass ping checks.
 - The Windows host exposes **SMB (port 445)**, which is commonly targeted by exploits such as **EternalBlue**. This service should be restricted or patched if not required.
-- The Linux host running VMware (`port 902`) may be used for remote management; ensure access is limited and the service is up to date.
+- The Linux host running VMware (`port 53`) may be used for remote management; ensure access is limited and the service is up to date.
 - OS detection was performed using the `-O` flag, revealing potential operating systems and network distances.
 - All scans were conducted ethically within a controlled lab environment for educational purposes.
 
