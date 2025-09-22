@@ -39,7 +39,7 @@ This scan was conducted on a private network for educational purposes only. Unau
 
 ## 📸 Nmap Scan Screenshots
 
-Below are screenshots of Nmap scans performed during this task which is in `Nmap-Scan-Screenshots.png`:
+Below are screenshots of Nmap scans performed during this task:
 
 - `scan-1.png`: It shows a verbose TCP SYN scan with OS detection on 192.168.231.103, skipping ping checks to scan even if the host blocks ICMP.
 - `scan-2.png`: It shows OS detection on 192.168.231.254, but if the host blocks ping probes, it may appear down and return no results.
