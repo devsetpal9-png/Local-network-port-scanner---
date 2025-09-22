@@ -1,0 +1,37 @@
+# Cybersecurity Internship – Task 1
+# Nmap Scan Results
+# Date: September 22, 2025
+# Scanner: dak@kali (Kali Linux)
+# Target Subnet: 192.168.231.0/24
+
+------------------------------------------------------------
+Scan 1: 192.168.231.103
+Command: nmap -sS -v -O -Pn 192.168.231.103
+
+Host seems down.
+
+------------------------------------------------------------
+Scan 2: 192.168.231.254
+Command: nmap -O 192.168.231.254
+
+Host seems down. If it is really up, but blocking our ping probes, try -Pn.
+
+------------------------------------------------------------
+Scan 3: 192.168.231.133
+Command: nmap -sS -sV -O 192.168.231.133
+
+Host is up (0.00015s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT    STATE SERVICE
+53/tcp open  iss-receiver (VMware)
+
+Device type: general purpose
+Running: Linux 2.6.X
+OS details: Linux 2.6.9 - 2.6.33
+Network Distance: 1 hop
+
+------------------------------------------------------------
+# Notes:
+# - All scans were performed ethically within a controlled lab network.
+# - OS detection used the -O flag; results may vary based on network conditions.
+# - Consider using -Pn for hosts that block ICMP probes.
