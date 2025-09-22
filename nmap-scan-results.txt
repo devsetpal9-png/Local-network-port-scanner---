@@ -1,24 +1,24 @@
 # Cybersecurity Internship – Task 1
 # Nmap Scan Results
 # Date: September 22, 2025
-# Scanner: dak@kali (Kali Linux)
+# Scanner: Nmap (Kali Linux)
 # Target Subnet: 192.168.231.0/24
 
 ------------------------------------------------------------
-Scan 1: 192.168.231.103
-Command: nmap -sS -v -O -Pn 192.168.231.103
+Scan 1: 192.168.xxx.xxx
+Command: nmap -sS -v -O -Pn 192.168.xxx.xxx
 
 Host seems down.
 
 ------------------------------------------------------------
-Scan 2: 192.168.231.254
-Command: nmap -O 192.168.231.254
+Scan 2: 192.168.xxx.xxx
+Command: nmap -O 192.168.xxx.xxx
 
 Host seems down. If it is really up, but blocking our ping probes, try -Pn.
 
 ------------------------------------------------------------
-Scan 3: 192.168.231.133
-Command: nmap -sS -sV -O 192.168.231.133
+Scan 3: 192.168.xxx.xxx
+Command: nmap -sS -sV -O 192.168.xxx.xxx
 
 Host is up (0.00015s latency).
 Not shown: 999 closed tcp ports (reset)
