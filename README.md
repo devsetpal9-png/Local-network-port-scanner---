@@ -13,7 +13,7 @@ Discover open ports on devices in a local network to understand service exposure
 
 ## 📡 Methodology
 1. Identified local IP range.
-2. Performed TCP SYN and UDP scans.
+2. Performed TCP SYN, OPEN PORT and OS DETECTION scan.
 3. Analyzed scan results and services.
 4. Captured packets with Wireshark.
 5. Documented risks and recommendations.
