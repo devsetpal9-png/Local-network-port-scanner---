@@ -56,8 +56,39 @@ The image `wireshark-analysis.png` captures key packets during the Nmap scan. It
 - TCP options such as MSS, SACK, and timestamps, which help fingerprint the target OS.
 
 This analysis confirms the behavior of Nmap’s SYN scan and provides deeper insight into how devices respond at the packet level.
-## 🤖 Automation
-Included a Python script to automate Nmap scans and parse results.
+## ⚙️ Python Automation
+
+This project includes a Python script (`interactive-scan.py`) that automates Nmap scans for any IP address entered by the user.
+
+### 🔧 Features
+- Prompts for target IP interactively
+- Performs SYN scan (`-sS`), service version detection (`-sV`), OS fingerprinting (`-O`)
+- Skips ping checks (`-Pn`) to scan even if ICMP is blocked
+- Displays open ports, services, and OS guesses
+- Handles unreachable hosts gracefully
+
+### 📦 Requirements
+
+To run this project, ensure the following tools and libraries are installed:
+
+### 🔧 System Tools
+- **Linux OS** (Tested on Kali Linux and Ubuntu)
+- **Nmap** – Network scanning tool  
+  Install with: `sudo apt install nmap`
+
+### 🐍 Python Environment
+- **Python 3.6+**
+- **python-nmap** – Python wrapper for Nmap  
+  Install with: `sudo apt install python3-nmap`  
+                `sudo pip3 install python-nmap`
+
+### 📁 Location of python script
+- See `automation-script.py` for port scanning. which is fully organised, easy to read and understandable with comments.
+
+### 🖥️ How to Run
+```bash
+sudo python3 automation-script.py
+ ```
 
 ## 📚 Interview Prep
 See `interview-questions.md` for answers to common cybersecurity questions related to port scanning.
